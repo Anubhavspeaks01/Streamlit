@@ -20,4 +20,11 @@ flavour=st.selectbox("choose flavour",["height","motu","cutie"])
 time=st.slider("time level",0,5,2)
 st.write(f"time level {time}")
 
-st.number_input("How many girls",min)
+girls = st.number_input("How many girls",min_value=1,max_value=10)
+st.write(f"Selected no of girls {girls}")
+
+name=st.text_input("Enter yoour name")
+if name:
+    st.write(F"your girl is on the way {name}")
+dob=st.date_input("Select your date of birth")
+st.write(f"Your dote of birth is {dob}")
